@@ -1,9 +1,8 @@
 # Hackintosh project | MSI GL6 8RE Laptop
 
-!!!This config does not work!!!
-!!!Don't try it without caution!!!
+Works with Mac OS Catalina. 10.15.7
 
-I was able to get to the Mac OS Big Sur installer but it fails after ~20 minutes.
+OpenCore Version: 0.6.9
 
 ## Config
 
@@ -15,3 +14,9 @@ I was able to get to the Mac OS Big Sur installer but it fails after ~20 minutes
   - Wireless: Wireless AC 9462
   - Ethernet: Qualcomm Atheros AR8171/8175 PCI-E Gigabit Ethernet Controller NDIS 630
 * BLUETOOTH: Intel Wireless Bluetooth
+
+## Ressources
+
+OpenCore guides: https://dortania.github.io/OpenCore-Install-Guide/
+How to create bootable usb with macOS: https://support.apple.com/en-us/HT201372
+MountEfi: https://github.com/corpnewt/MountEFI
