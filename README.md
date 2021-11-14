@@ -17,6 +17,6 @@ OpenCore Version: 0.6.9
 
 ## Ressources
 
-OpenCore guides: https://dortania.github.io/OpenCore-Install-Guide/
-How to create bootable usb with macOS: https://support.apple.com/en-us/HT201372
-MountEfi: https://github.com/corpnewt/MountEFI
+- OpenCore guides: https://dortania.github.io/OpenCore-Install-Guide/
+- How to create bootable usb with macOS: https://support.apple.com/en-us/HT201372
+- MountEfi: https://github.com/corpnewt/MountEFI
