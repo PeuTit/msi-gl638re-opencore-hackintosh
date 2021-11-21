@@ -6,14 +6,14 @@ OpenCore Version: 0.6.9
 
 ## Functionality
 
-- [ ] Battery
+- [x] USB
+- [x] Sleep mode
 - [x] Ethernet
+- [ ] Battery
 - [ ] Wifi
 - [ ] Bluetooth
 - [ ] Sound
-- [x] USB
 - [ ] SD Card port
-- [x] Sleep mode
 - [ ] DisplayPort / Hdmi
 
 ## Config
@@ -31,10 +31,10 @@ OpenCore Version: 0.6.9
 
 For a Coffee Lake processor, we need the following ssdt:
 
+- SSDT-USBX: Usb => Valid
+
 - SSDT-PLUG: cpu => Valid
   path: SB.PR00
-
-- SSDT-USBX: Usb => Valid
 
 - SSDT-PNLF: Backlight => Valid
   Need either a Linux or Windows machine to build this one.
@@ -44,20 +44,30 @@ For a Coffee Lake processor, we need the following ssdt:
   LPC (Low Pin Count): LPCB
   PCI: PCI0
 
-- SSDT-RTC0: System Clock => Valid
+- SSDT-USB-Reset.aml
+
+- SSDT-SBUS-MCHC: SMBus (post-install) => Valid
+  IOReg name: /PCI0@0/SBUS@1F,4 -> PCI0.SBUS
+
+- SSDT-XOSI/SSDT-GPI0 (post-install): i2c Trackpad
+
+- SSDT-RHUB: Usb => Don't need
+  path: PCI0.XHC.RHUB
+
+- SSDT-EC-USBX-LAPTOP: Usb port power => Don't need
+
+
+- SSDT-AWAC: System Clock => Don't need
+  When searching ACPI000E, we get nothing, this mean that we don't need to do anything for awac.
+
+- SSDT-RTC0: System Clock => Don't need
   We have something when searching for PNP0B00, but we don't have an `sta` method.
   LPC (Low Pin Count): LPCB
   PCI: PCI0
 
-- SSDT-XOSI/SSDT-GPI0 (post-install): i2c Trackpad
-
-- SSDT-AWAC: System Clock
-  When searching ACPI000E, we get nothing, this mean that we don't need to do anything for awac.
-
 - SSDT-EC: Embedded Controllers
   Embedded controller name: EC
   Path of our embedded controller: PCI0.LPCB
-
   Because pnp0c09 is already named EC we don't need an SSDT-EC
 
 Compiling & Decompiling ssdts: https://dortania.github.io/Getting-Started-With-ACPI/Manual/compile.html
@@ -70,3 +80,4 @@ Compiling & Decompiling ssdts: https://dortania.github.io/Getting-Started-With-A
 - Efi-Agent: https://github.com/headkaze/EFI-Agent
 - OpenCore Sanity Checker: https://opencore.slowgeek.com
 - OpenCore GenX: https://github.com/Pavo-IM/OC-Gen-X
+- IORegistreryClone: https://github.com/khronokernel/IORegistryClone
