@@ -9,8 +9,8 @@ OpenCore Version: 0.6.9
 - [x] USB
 - [x] Sleep mode
 - [x] Ethernet
+- [x] Wifi
 - [ ] Battery
-- [ ] Wifi
 - [ ] Bluetooth
 - [ ] Sound
 - [ ] SD Card port
