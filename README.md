@@ -27,6 +27,20 @@ OpenCore Version: 0.6.9
   - Ethernet: Qualcomm Atheros AR8171/8175 PCI-E Gigabit Ethernet Controller NDIS 630
 - BLUETOOTH: Intel Wireless Bluetooth
 
+## OpenCore Config.plist
+
+In `config.plist`:
+
+In the Kernel/Add:
+
+Comment=RMII2C.kext
+Enabled=False
+BundlePath=VoodooRMI.kext/Contents/PlugIns/RMII2C.kext
+
+Comment=VoodooInput.kext
+Enabled=False
+BundlePath=VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext
+
 ## ACPI
 
 For a Coffee Lake processor, we need the following ssdt:
