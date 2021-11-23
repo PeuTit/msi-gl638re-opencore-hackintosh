@@ -11,7 +11,7 @@ OpenCore Version: 0.6.9
 - [x] Ethernet
 - [x] Wifi
 - [x] Bluetooth
-- [ ] Battery
+- [x] Battery
 - [ ] Sound
 - [ ] SD Card port
 - [ ] DisplayPort / Hdmi
