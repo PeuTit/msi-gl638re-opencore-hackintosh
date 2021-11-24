@@ -26,6 +26,7 @@ OpenCore Version: 0.6.9
   - Wireless: Wireless AC 9462
   - Ethernet: Qualcomm Atheros AR8171/8175 PCI-E Gigabit Ethernet Controller NDIS 630
 - BLUETOOTH: Intel Wireless Bluetooth
+- SOUND CARD: To define
 
 ## OpenCore Config.plist
 
@@ -58,7 +59,7 @@ For a Coffee Lake processor, we need the following ssdt:
   LPC (Low Pin Count): LPCB
   PCI: PCI0
 
-- SSDT-USB-Reset.aml
+- SSDT-USB-Reset: Make the usb port work => Valid
 
 - SSDT-SBUS-MCHC: SMBus (post-install) => Valid
   IOReg name: /PCI0@0/SBUS@1F,4 -> PCI0.SBUS
@@ -70,7 +71,6 @@ For a Coffee Lake processor, we need the following ssdt:
 
 - SSDT-EC-USBX-LAPTOP: Usb port power => Don't need
 
-
 - SSDT-AWAC: System Clock => Don't need
   When searching ACPI000E, we get nothing, this mean that we don't need to do anything for awac.
 
@@ -79,7 +79,7 @@ For a Coffee Lake processor, we need the following ssdt:
   LPC (Low Pin Count): LPCB
   PCI: PCI0
 
-- SSDT-EC: Embedded Controllers
+- SSDT-EC: Embedded Controllers => Don't need
   Embedded controller name: EC
   Path of our embedded controller: PCI0.LPCB
   Because pnp0c09 is already named EC we don't need an SSDT-EC
