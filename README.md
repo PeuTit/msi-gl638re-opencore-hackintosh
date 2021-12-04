@@ -6,11 +6,11 @@ OpenCore Version: 0.7.5
 
 ## Functionality
 
-- [x] USB
+- [ ] USB
 - [x] Sleep mode
 - [x] Battery
 - [ ] Ethernet
-- [ ] Wifi
+- [x] Wifi
 - [ ] Bluetooth
 - [ ] Sound
 - [ ] SD Card port
