@@ -1203,8 +1203,6 @@
 		<dict>
 			<key>AdviseFeatures</key>
 			<false/>
-			<key>AdviseWindows</key>
-			<false/>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
@@ -1333,8 +1331,6 @@
 			<string>ASUS</string>
 			<key>TimerResolution</key>
 			<integer>50000</integer>
-			<key>KeyMergeThreshold</key>
-			<integer>2</integer>
 		</dict>
 		<key>Output</key>
 		<dict>
@@ -1402,8 +1398,6 @@
 			<key>OSInfo</key>
 			<false/>
 			<key>UnicodeCollation</key>
-			<false/>
-			<key>AppleEvent</key>
 			<false/>
 		</dict>
 		<key>Quirks</key>
