@@ -13,6 +13,10 @@ OpenCore Version: 0.7.5
 - [ ] Wifi
 - [ ] Bluetooth
 - [ ] Sound
+  - [ ] internal speaker
+  - [ ] internal microphone
+  - [x] jack headset
+  - [x] jack microphone
 - [ ] SD Card port
 - [ ] DisplayPort / Hdmi
 
