@@ -76,6 +76,8 @@ BundlePath=VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext
 
 For a Coffee Lake processor, we need the following ssdt:
 
+### Needed:
+
 - SSDT-USBX: Usb => Valid
 
 - SSDT-PLUG: cpu => Valid
@@ -95,6 +97,8 @@ For a Coffee Lake processor, we need the following ssdt:
   IOReg name: /PCI0@0/SBUS@1F,4 -> PCI0.SBUS
 
 - SSDT-XOSI/SSDT-GPI0 (post-install): i2c Trackpad
+
+### Needed:
 
 - SSDT-RHUB: Usb => Don't need
   path: PCI0.XHC.RHUB
