@@ -36,7 +36,7 @@ Thanks to https://github.com/jbwharris/hackintosh-msi-GL72M-7RDX/blob/master/REA
 In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
 
 | Disable |
-|--|--|
+|--|
 | `Fast Boot` |
 | `Secure Boot` |
 | `Serial/COM Port` |
@@ -48,7 +48,7 @@ In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
 | `CFG Lock` |
 
 | Enable |
-|--|--|
+|--|
 | `VT-x` |
 | `Above 4G decoding` |
 | `Hyper-threading` |
