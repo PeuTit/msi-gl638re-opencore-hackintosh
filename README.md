@@ -35,7 +35,7 @@ Thanks to https://github.com/jbwharris/hackintosh-msi-GL72M-7RDX/blob/master/REA
 **Some options only available in advanced mode:**\
 In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
 
-| Disable |  |
+| Disable |
 |--|--|
 | `Fast Boot` |
 | `Secure Boot` |
@@ -47,7 +47,7 @@ In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
 | `Intel Plateform Trust` |
 | `CFG Lock` |
 
-| Enable |  |
+| Enable |
 |--|--|
 | `VT-x` |
 | `Above 4G decoding` |
@@ -56,7 +56,7 @@ In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
 | `EHCI/XHCI Hand-off` |
 | `OS type: Windows 8.1/10 UEFI Mode` |
 | `DVMT Pre-Allocated(iGPU Memory): 64MB` |
-| `SATA Mode: AHCI' |
+| `SATA Mode: AHCI` |
 
 ## OpenCore Config.plist
 
