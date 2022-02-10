@@ -35,32 +35,28 @@ Thanks to https://github.com/jbwharris/hackintosh-msi-GL72M-7RDX/blob/master/REA
 **Some options only available in advanced mode:**\
 In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
 
-| Settings |  |
+| Disable |  |
 |--|--|
-| `CFG Lock` | Disable |
-| `CSM` | Disable |
-| Fast Boot | Disable |
-| `Intel Speed Shift`(aka. HWP) | Enable |
-| Secure Boot | Disable |
-| Enable Hiberation | Disable |
-| DVMT Pre-Allocated | 64M |
+| `Fast Boot` |
+| `Secure Boot` |
+| `Serial/COM Port` |
+| `VT-d` |
+| `CSM` |
+| `Thunderbolt` |
+| `Intel SGX` |
+| `Intel Plateform Trust` |
+| `CFG Lock` |
 
-<pre>
-[Advanced] tab
-├─ Power & Performance
-│  └─ CPU-Power Management Control
-│     ├─ <b>Intel(R) Speed Shift Technology</b>
-│     └─ CPU Lock Configuration
-│        └─ <b>CFG Lock</b>
-├─ System Agent (SA) Configuration
-│  └─ Graphics Configuration
-│     └─ DVMT Pre-Allocated
-├─ CSM Configuration
-│  └─ <b>CSM Support</b>
-│   
-└─ ACPI Settings
-   └─ <b>Enable Hibernation</b>
-</pre>
+| Enable |  |
+|--|--|
+| `VT-x` |
+| `Above 4G decoding` |
+| `Hyper-threading` |
+| `Execute Disable Bit` |
+| `EHCI/XHCI Hand-off` |
+| `OS type: Windows 8.1/10 UEFI Mode` |
+| `DVMT Pre-Allocated(iGPU Memory): 64MB` |
+| `SATA Mode: AHCI' |
 
 ## OpenCore Config.plist
 
