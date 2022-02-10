@@ -28,6 +28,40 @@ OpenCore Version: 0.7.5
 - BLUETOOTH: Intel Wireless Bluetooth
 - SOUND CARD: To define
 
+### Bios
+
+Thanks to https://github.com/jbwharris/hackintosh-msi-GL72M-7RDX/blob/master/README.md repo.
+
+**Some options only available in advanced mode:**\
+In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
+
+| Settings |  |
+|--|--|
+| `CFG Lock` | Disable |
+| `CSM` | Disable |
+| Fast Boot | Disable |
+| `Intel Speed Shift`(aka. HWP) | Enable |
+| Secure Boot | Disable |
+| Enable Hiberation | Disable |
+| DVMT Pre-Allocated | 64M |
+
+<pre>
+[Advanced] tab
+├─ Power & Performance
+│  └─ CPU-Power Management Control
+│     ├─ <b>Intel(R) Speed Shift Technology</b>
+│     └─ CPU Lock Configuration
+│        └─ <b>CFG Lock</b>
+├─ System Agent (SA) Configuration
+│  └─ Graphics Configuration
+│     └─ DVMT Pre-Allocated
+├─ CSM Configuration
+│  └─ <b>CSM Support</b>
+│   
+└─ ACPI Settings
+   └─ <b>Enable Hibernation</b>
+</pre>
+
 ## OpenCore Config.plist
 
 In `config.plist`:
