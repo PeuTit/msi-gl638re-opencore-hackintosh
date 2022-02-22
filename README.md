@@ -1,17 +1,17 @@
 # Hackintosh project | MSI GL6 8RE Laptop
 
-Works with Mac OS Monterey 12.0.1
+Works with Mac OS Catalina 15.5.7
 
-OpenCore Version: 0.7.5
+OpenCore Version: 0.6.9
 
 ## Functionality
 
 - [x] USB
 - [x] Sleep mode
 - [x] Battery
-- [ ] Ethernet
-- [ ] Wifi
-- [ ] Bluetooth
+- [x] Ethernet
+- [x] Wifi
+- [x] Bluetooth
 - [ ] Sound
   - [ ] internal speaker
   - [ ] internal microphone
